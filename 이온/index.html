@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>단어장 퀴즈</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>단어장 퀴즈</h1>
+
+        <!-- 학습 모드 선택 -->
+        <label for="modeSelect">학습 모드:</label>
+        <select id="modeSelect">
+            <option value="all">전체 학습</option>
+            <option value="memorized">외운 문제 학습</option>
+            <option value="unmemorized">못 외운 문제 학습</option>
+        </select>
+
+        <!-- 출제 방식 선택 -->
+        <label for="quizType">출제 방식:</label>
+        <select id="quizType">
+            <option value="textToImage">글 보고 사진 맞추기</option>
+            <option value="imageToText">사진 보고 글 맞추기</option>
+        </select>
+
+        <!-- 퀴즈 영역 -->
+        <div id="quiz">
+            <p id="question"></p>
+            <img id="image" src="" alt="문제 이미지" class="hidden">
+            <button id="showAnswer">정답 보기</button>
+            <button id="dontKnow">몰라요</button>
+            <button id="know">알아요</button>
+            <p id="progress"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
