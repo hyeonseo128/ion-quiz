@@ -1,5 +1,5 @@
 const words = [
-    { id: 1, text: "나트륨 이온", image: "1.PNG" },
+    { id: 1, text: "나트륨 이온", image: "1.png" },
     { id: 2, text: "칼륨 이온", image: "2.png" },
     { id: 3, text: "은 이온", image: "3.png" },
     { id: 4, text: "칼슘 이온", image: "4.png" },
